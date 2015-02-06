@@ -1,0 +1,14 @@
+<template>
+    <section>
+        <div class="row">
+          <div class="col-lg-12" repeat.for="post of posts">
+            <div class="thread">
+              <a href="http://8ch.net/b/src/${post.tim}${post.ext}" target="_blank">
+                <img src="http://8ch.net/b/thumb/${post.tim}${post.ext}">
+              </a>
+              <p>${post.com}</p>
+            </div>
+          </div>
+        </div>
+    </section>
+</template>

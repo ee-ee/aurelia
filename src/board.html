@@ -1,0 +1,15 @@
+<template>
+  <section>
+    <div class="row">
+      <div class="col-lg-12" repeat.for="thread of threads">
+        <div class="thread">
+          <h4><a href="/#/thread/${thread.posts[0].no}">${thread.posts[0].sub}</a></h4>
+          <a href="http://8ch.net/b/src/${thread.posts[0].tim}${thread.posts[0].ext}" target="_blank">
+            <img src="http://8ch.net/b/thumb/${thread.posts[0].tim}${thread.posts[0].ext}">
+          </a>
+          <p>${thread.posts[0].com}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
